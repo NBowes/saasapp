@@ -7,7 +7,7 @@ gem 'rails', '4.2.6'
 # Use Puma as the app server
 gem 'puma', '3.4.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '5.0'
+gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '3.0.0'
 # Use CoffeeScript for .coffee assets and views
@@ -22,7 +22,7 @@ gem 'turbolinks', '5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.5.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
