@@ -33,6 +33,9 @@ gem 'sdoc', '0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Use bootstrap for front-end layout
+gem 'bootstrap-sass', '3.3.7'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'

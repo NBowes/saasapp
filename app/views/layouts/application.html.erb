@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Upskill</title>
+  <title>Sassapp</title>
+  <link href="//fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <nav class='navbar navbar-inverse'>
+      <a href="/" class="navbar-brand">MatchDev</a>
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">About</a>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+      <%= yield %>
+  </div>
 </body>
 </html>
