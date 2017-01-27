@@ -36,6 +36,9 @@ gem 'sdoc', '0.4.0', group: :doc
 # Use bootstrap for front-end layout
 gem 'bootstrap-sass', '3.3.7'
 
+# Use Font Awesome for fonts
+gem 'font-awesome-sass', '~> 4.7.0'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'

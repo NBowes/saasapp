@@ -16,11 +16,17 @@
 
  @import 'bootstrap-sprockets';
  @import 'bootstrap';
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
 
  h1, h2, h3 {
    font-family: 'Lalezar', sans-serif;
  }
+ .navbar {
+   border: none;
+   border-radius: 0px;
 
+ }
  .navbar, .homepage-center{
    background: #000000; /* fallback for old browsers */
    background: -webkit-linear-gradient(to left, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
@@ -28,11 +34,14 @@
 
  }
 
- .navbar {
-   border: none;
-   border-radius: 0px;
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  &:hover{
+    opacity: 0.75;
+  }
+}
 
- }
 
  .homepage-center {
    margin-top: -20px;
