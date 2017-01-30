@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
   get '/about', to: 'pages#about'
-  resources :contact; # same as get 'contact/new', to: 'contact#new'
+  resources :contacts; # same as get 'contact/new', to: 'contact#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with 'rake routes'.
 
