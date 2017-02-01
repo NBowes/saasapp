@@ -39,8 +39,11 @@ gem 'bootstrap-sass', '3.3.7'
 # Use Font Awesome for fonts
 gem 'font-awesome-sass', '~> 4.7.0'
 
-#Use Hirb for better databse display
+# Use Hirb for better databse display
 gem 'hirb', '0.7.3'
+
+# Use Devise for user authentication
+gem 'devise', '4.2.0'
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
