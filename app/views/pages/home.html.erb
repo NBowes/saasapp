@@ -10,7 +10,6 @@
         <h2 class='text-center'>Basic Membership</h2>
         <h4>This membership gives you access to the community of developers</h4>
         <br>
-        <%= link_to 'Basic plan', '#', class: 'btn btn-primary btn-lg btn-block' %>
         <%= link_to 'Sign up for Basic', new_user_registration_path(plan: @basic_plan.name), class: 'btn btn-primary btn-lg btn-block' %>
       </div>
     </div>
@@ -21,10 +20,7 @@
           This membership is $20/month and gives you access to all Basic features,
           access to contact info, and early access to new features.
         </h4>
-        <%= link_to 'Premium plan', '#', class: 'btn btn-warning btn-lg btn-block' %>
-
         <%= link_to 'Sign up for Premium', new_user_registration_path(plan: @preimum_plan.name), class: 'btn btn-warning btn-lg btn-block' %>
-
       </div>
     </div>
   </div>
