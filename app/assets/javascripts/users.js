@@ -5,7 +5,7 @@ $(document).on('turbolinks:load',function(){
     Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'))
     submitBtn.click(function(event){
       event.preventDefault();
-      submitBtn.val("Processing").prop('disabled',true);
+      submitBtn.val('Processing').prop('disabled',true);
       var cNum = $('#card_number').val(),
           cvcNum = $('#card_code').val(),
           cMonth = $('#card_month').val(),
@@ -37,7 +37,7 @@ $(document).on('turbolinks:load',function(){
     });
     function stripeResponseHandler(status, response){
       var token = response.id;
-      $theForm.append($('<input type="hidden" name="stripeToken">').val(token));
-      $theForm.get(0).submit();
+      theForm.append($('<input type="hidden" name="stripe_user_token">').val(token));
+      theForm.get(0).submit();
     }
 });
