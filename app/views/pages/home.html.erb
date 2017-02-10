@@ -1,8 +1,13 @@
+<% if user_signed_in? %>
 <div class='homepage-center text-center container-fluid'>
   <h1> Welcome to MatchDev </a>
   <h3> A place to meet tomorrows next best developer - today </h3>
 </div>
-
+<% else %>
+  <div class='homepage-center text-center container-fluid'>
+    <h1> Welcome to MatchDev </a>
+    <h3> A place to meet tomorrows next best developer - today </h3>
+  </div>
 <div class='container home-sign-up'>
   <div class='row'>
     <div class='col-md-6'>
@@ -24,4 +29,5 @@
       </div>
     </div>
   </div>
-</div
+</div>
+<% end%>
