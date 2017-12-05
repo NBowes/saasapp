@@ -23,5 +23,3 @@
 /config/application.yml
 
 requirements.txt
-.env
-/db/migrate
